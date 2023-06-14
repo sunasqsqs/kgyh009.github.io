@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>调查问卷</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/questionnaire.css">
+    <style>
+      body{
+      background: url(picture/login4.jpg) no-repeat;
+        background-size:cover;
+        width:100% height: 100%;
+        color:black;}
+    </style>
+</head>
+<body >
+    <main>
+        <form action="ok.html" method="post">
+            <table border="1" background="./images/tableBg.jpg">
+                <tr><th colspan="2"><h1>调查问卷</h1></th></tr>
+                 <tr>
+                   <td id="intr" colspan="2">作为文明古国之一，中国无疑有着悠久的饮食历史，而见证这一历史的肯定离不开八大菜系啦。<br>亲爱的朋友们，为了更好的宣传中华美食，下面我们想通过这份调查问卷来了解你对八大菜系的了解程度以及对八大菜系的兴趣。</td>
+                </tr>
+                <tr>
+                    <td>您的性别</td>
+                    <td>
+                    <label><input name="gender" type="radio" value="male" checked/>男</label>
+                    <label><input name="gender" type="radio" value="female"/>女</label>
+                </td>
+                </tr>
+                <tr><td>QQ号</td><td><input type="number" name="QQ" required /><br/></td></tr>
+                <tr><td>邮件</td><td><input type="email" placeholder="邮箱地址"> </td></tr>
+                <tr>
+                    <td>您的年龄段</td>
+                    <td>
+                        <select name="age">
+                            <option value="age1">18岁以下</option>
+                            <option selected value="age2">18~35岁</option>
+                            <option value="age3">35岁以上</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>您接触八大菜系的种数</td>
+                    <td>
+                        <label><input type="radio" name="amount" value="1" required />&nbsp;&nbsp;2种以内&nbsp;&nbsp; </label>
+                                    <label><input type="radio" name="amount" value="2" />&nbsp;&nbsp;3~5种&nbsp;&nbsp; </label>
+                                    <label><input type="radio" name="amount" value="3" />&nbsp;&nbsp;5~7种&nbsp;&nbsp; </label>
+                                    <label><input type="radio" name="amount" value="4" />&nbsp;&nbsp;8种&nbsp;&nbsp; </label>
+                    </td>
+                </tr>
+             
+                <tr>
+                    <td>您喜欢哪些菜系（可多选）</td>
+                    <td>
+                        <label><input type="checkbox" name="poet"  />&nbsp;&nbsp;川菜</label>
+                        <label><input type="checkbox" name="poet"  />&nbsp;&nbsp;徽菜</label>
+                        <label><input type="checkbox" name="poet"  />&nbsp;&nbsp;苏菜</label>
+                        <label><input type="checkbox" name="poet"  />&nbsp;&nbsp;鲁菜</label><br>
+                        <label><input type="checkbox" name="poet"  />&nbsp;&nbsp;闽菜</label>
+                        <label><input type="checkbox" name="poet"  />&nbsp;&nbsp;粤菜</label>
+                        <label><input type="checkbox" name="poet"  />&nbsp;&nbsp;浙菜</label>
+                        <label><input type="checkbox" name="poet"   />&nbsp;&nbsp;湘菜</label>
+                    </td>
+                </tr>
+             
+                
+                <tr>
+                    <td>请为本网站打分(满分5分,最低0分)</td>
+                    <td><input type="range" max="5" min="0" value="0"></td>
+                </tr>
+                <tr>
+                    <td>对于本站网页优化您有什么更好的建议吗？<br>（请提交标有修改意见的网页截图）</td>
+                    <td>
+                        <label><input name="file" type="file" value="请选择文件"/></label>
+                    </td>
+                </tr>
+                <tr><td>您接触最喜欢菜系的时间</td><td><label><input name="date" type="date" value="请选择时间"/></label></td></tr>
+                <tr>
+                    <td>对于宣传八大菜系，您有什么独到见解？</td>
+                    <td>
+                        <label><textarea rows="5" cols="30"></textarea> </label>
+                    </td>
+                </tr>
+             
+                <tr><td colspan="2" align="center">
+                    <input type="submit" value="提交问卷"> 
+                    <button type="reset">重置</button>	
+                </td></tr>
+            </table>
+        </form>            
+    </main>
+
+<footer>
+    <nav>
+        <ul>
+            <li> 帮助中心 |</li>
+            <li> &nbsp;联系我们 |</li>
+            <li> &nbsp;关于我们 |</li>
+            <li> &nbsp;隐私声明 |</li>
+            <li> &nbsp;意见反馈 </li>
+        </ul>
+    </nav>
+    <address>Copyright &copy; 济南大学Web前端课程团队<a href="http://www.ujn.edu.cn">http://www.ujn.edu.cn</a></address>
+</footer>
+
+</body>
+</html>
